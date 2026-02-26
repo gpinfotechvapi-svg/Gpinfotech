@@ -2,109 +2,152 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>GP Infotech - IT Solutions & Services</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GP Infotech - Laptops, Mobiles & Tablets</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-
-<!-- Header -->
-<header>
-    <div class="logo">
-        <img src="logo.jpeg" alt="GP Infotech Logo">
-        <h2>GP INFOTECH</h2>
-    </div>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <!-- <a href="#contact">Contact</a> -->
-    </nav>
-    <a href="https://wa.me/919925581523?text=Hello%20GP%20Infotech" target="_blank" class="whatsapp-btn">
-        <i class="fab fa-whatsapp"></i> WhatsApp
-    </a>
-</header>
-
-<!-- Hero Section -->
-<section class="hero" id="home">
-    <div class="hero-left">
-        <h1>Sales & Service of IT Products</h1>
-        <p>GP INFOTECH provides reliable computer sales, repair services, networking solutions and CCTV installation with expert support.</p>
-        <a href="https://wa.me/919925581523?text=Hello%20GP%20Infotech" class="quote-btn">Get Free Quote <i class="fas fa-arrow-right"></i></a>
-    </div>
-    <div class="hero-right">
-        <div class="card">
-            <i class="fas fa-laptop-code"></i>
-            <h3>GP Infotech</h3>
-            <p>Trusted Technology Partner Since 2020</p>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo.jpeg" alt="GP Infotech Logo" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2240%22 height=%2240%22 viewBox=%220 0 40 40%22><rect width=%2240%22 height=%2240%22 fill=%22%232563eb%22 rx=%228%22/><text x=%228%22 y=%2228%22 fill=%22white%22 font-size=%2220%22 font-weight=%22bold%22>GP</text></svg>'">
+            <h2>GP INFOTECH</h2>
         </div>
-    </div>
-</section>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="https://wa.me/919925581523?text=Hello%20GP%20Infotech%2C%20I'm%20interested%20in%20your%20products" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+    </header>
 
-<!-- Services Section -->
-<section class="services" id="services">
-    <h2>Our Services</h2>
-    <div class="service-container">
-        <div class="service-card" onclick="openService(0)">
-            <i class="fas fa-desktop"></i>
-            <h3>Computer Sales</h3>
-            <p>Desktop, Laptop, Printer and all IT accessories</p>
-            <div class="service-details">
-                <p>✓ Brand new desktops & laptops<br>✓ Printers and IT accessories<br>✓ Best price guarantee<br>✓ 1 year warranty</p>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Latest <span class="gradient-text">Laptops, Mobiles & Tablets</span></h1>
+            <p>Discover the best deals on premium gadgets. Quality assured with warranty and expert support.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn-primary">Browse Products <i class="fas fa-arrow-right"></i></a>
+                <a href="#contact" class="btn-outline">Contact Sales</a>
+            </div>
+            <div class="trust-badges">
+                <span><i class="fas fa-shield-alt"></i> 1 Year Warranty</span>
+                <span><i class="fas fa-truck"></i> Free Delivery</span>
+                <span><i class="fas fa-headset"></i> 24/7 Support</span>
             </div>
         </div>
-        <div class="service-card" onclick="openService(1)">
-            <i class="fas fa-tools"></i>
-            <h3>Repair & Service</h3>
-            <p>Fast and reliable repair service</p>
-            <div class="service-details">
-                <p>✓ Computer & laptop repair<br>✓ Printer servicing<br>✓ Virus removal<br>✓ Data recovery<br>✓ On-site support</p>
+        <div class="hero-image">
+            <div class="floating-card">
+                <i class="fas fa-laptop"></i>
+                <h3>Tech Hub</h3>
+                <p>100+ Products</p>
             </div>
         </div>
-        <div class="service-card" onclick="openService(2)">
-            <i class="fas fa-shield-alt"></i>
-            <h3>CCTV & Networking</h3>
-            <p>Professional installation solutions</p>
-            <div class="service-details">
-                <p>✓ CCTV installation<br>✓ Network setup<br>✓ WiFi solutions<br>✓ 24/7 monitoring<br>✓ Remote access</p>
+    </section>
+
+    <!-- Category Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <h2>Shop by Category</h2>
+            <div class="category-filters" id="categoryFilters">
+                <button class="filter-btn active" data-category="all">
+                    <i class="fas fa-th-large"></i> All Products
+                </button>
+                <button class="filter-btn" data-category="laptop">
+                    <i class="fas fa-laptop"></i> Laptops
+                </button>
+                <button class="filter-btn" data-category="mobile">
+                    <i class="fas fa-mobile-alt"></i> Mobiles
+                </button>
+                <button class="filter-btn" data-category="tablet">
+                    <i class="fas fa-tablet-alt"></i> Tablets
+                </button>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- About Section -->
-<section class="about" id="about">
-    <h2>About Us</h2>
-    <p>GP INFOTECH is a trusted IT service provider offering computer sales, repair services, networking and CCTV solutions. We focus on quality, reliability and customer satisfaction.</p>
-</section>
-
-
-<!-- Contact Section -->
-<!--<section class="contact" id="contact">
-    <h2>Contact Us</h2>
-     <div class="contact-container">
-        <div class="contact-info">
-            
-            <!-- <p><i class="fas fa-phone"></i> +91 99255 81523</p>
-            <p><i class="fas fa-envelope"></i> gpinfotech@email.com</p>
-            <p><i class="fas fa-map-marker-alt"></i> Vapi, Gujarat</p> -->
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="gradient-text">Premium Products</span></h2>
+                <p class="product-count" id="productCount">Showing <span>12</span> products</p>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded dynamically via JavaScript -->
+            </div>
         </div>
-        
-        <!-- <form action="https://formspree.io/f/mojnrkgb" method="POST">
-        <input type="text" name="name" placeholder="Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="message" placeholder="Message" required></textarea>
-        <button type="submit">Send</button>
-    </form> 
-    </div> -->
-</section>
+    </section>
 
-<!-- Footer -->
-<footer>
-    <p>© 2026 GP Infotech. All Rights Reserved.</p>
-</footer>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About GP Infotech</h2>
+            <p>Your trusted partner for quality laptops, mobiles, and tablets since 2020. We provide genuine products with warranty, competitive prices, and expert technical support.</p>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>100% Genuine</h3>
+                    <p>Original products with manufacturer warranty</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-clock"></i>
+                    <h3>Quick Delivery</h3>
+                    <p>Free and fast shipping across India</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>Easy Payment</h3>
+                    <p>Card, UPI, EMI options available</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script src="script.js"></script>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-phone"></i> +91 99255 81523</p>
+                    <p><i class="fas fa-envelope"></i> sales@gpinfotech.in</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Vapi, Gujarat, India</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="text" placeholder="Phone Number">
+                    <select required>
+                        <option value="">Interested In</option>
+                        <option value="laptop">Laptops</option>
+                        <option value="mobile">Mobiles</option>
+                        <option value="tablet">Tablets</option>
+                    </select>
+                    <textarea rows="4" placeholder="Message"></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 GP Infotech. All Rights Reserved. | Laptops, Mobiles & Tablets</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
