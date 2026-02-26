@@ -23,4 +23,4 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
             });
         }
     });
-});
+
