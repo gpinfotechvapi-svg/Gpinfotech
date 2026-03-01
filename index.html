@@ -12,14 +12,14 @@
 <!-- Header -->
 <header>
     <div class="logo">
-        <img src="logo.jpeg" alt="GP Infotech Logo">
+        <img src="logo.jpeg" alt="GP Infotech Logo" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2240%22 height=%2240%22 viewBox=%220 0 40 40%22><rect width=%2240%22 height=%2240%22 fill=%22%232563eb%22 rx=%228%22/><text x=%228%22 y=%2228%22 fill=%22white%22 font-size=%2220%22 font-weight=%22bold%22>GP</text></svg>'">
         <h2>GP INFOTECH</h2>
     </div>
     <nav>
         <a href="#home">Home</a>
         <a href="#services">Services</a>
         <a href="#about">About</a>
-        <!-- <a href="#contact">Contact</a> -->
+        <a href="#contact">Contact</a>
     </nav>
     <a href="https://wa.me/919925581523?text=Hello%20GP%20Infotech" target="_blank" class="whatsapp-btn">
         <i class="fab fa-whatsapp"></i> WhatsApp
@@ -29,7 +29,7 @@
 <!-- Hero Section -->
 <section class="hero" id="home">
     <div class="hero-left">
-        <h1>Sales & Service of IT Products</h1>
+        <h1>Sales & Service of <span class="gradient-text">IT Products</span></h1>
         <p>GP INFOTECH provides reliable computer sales, repair services, networking solutions and CCTV installation with expert support.</p>
         <a href="https://wa.me/919925581523?text=Hello%20GP%20Infotech" class="quote-btn">Get Free Quote <i class="fas fa-arrow-right"></i></a>
     </div>
@@ -44,7 +44,7 @@
 
 <!-- Services Section -->
 <section class="services" id="services">
-    <h2>Our Services</h2>
+    <h2>Our <span class="gradient-text">Services</span></h2>
     <div class="service-container">
         <div class="service-card" onclick="openService(0)">
             <i class="fas fa-desktop"></i>
@@ -75,34 +75,96 @@
 
 <!-- About Section -->
 <section class="about" id="about">
-    <h2>About Us</h2>
+    <h2>About <span class="gradient-text">Us</span></h2>
     <p>GP INFOTECH is a trusted IT service provider offering computer sales, repair services, networking and CCTV solutions. We focus on quality, reliability and customer satisfaction.</p>
+    <div class="stats">
+        <div class="stat-item">
+            <i class="fas fa-calendar-alt"></i>
+            <h3>2018</h3>
+            <p>Year Established</p>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-smile"></i>
+            <h3>1000+</h3>
+            <p>Happy Clients</p>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-project-diagram"></i>
+            <h3>500+</h3>
+            <p>Projects Completed</p>
+        </div>
+    </div>
 </section>
 
-
 <!-- Contact Section -->
-<!--<section class="contact" id="contact">
-    <h2>Contact Us</h2>
-     <div class="contact-container">
+<section class="contact" id="contact">
+    <h2>Contact <span class="gradient-text">Us</span></h2>
+    <div class="contact-container">
         <div class="contact-info">
-            
-            <!-- <p><i class="fas fa-phone"></i> +91 99255 81523</p>
-            <p><i class="fas fa-envelope"></i> gpinfotech@email.com</p>
-            <p><i class="fas fa-map-marker-alt"></i> Vapi, Gujarat</p> -->
+            <div class="info-card">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Phone</h3>
+                <p>+91 99255 81523</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>gpinfotech.vapi@gmail.com</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Address</h3>
+                <p>Shop No. 123, Silver Plaza</p>
+                <p>Vapi, Gujarat - 396191</p>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/gpinfotech.vapi" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
         </div>
         
-        <!-- <form action="https://formspree.io/f/mojnrkgb" method="POST">
-        <input type="text" name="name" placeholder="Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="message" placeholder="Message" required></textarea>
-        <button type="submit">Send</button>
-    </form> 
-    </div> -->
+        <form action="https://formspree.io/f/mreavyzv" method="POST" class="contact-form">
+            <h3>Send us a Message</h3>
+            
+            <label>
+                Nama
+                <input type="text" name="name" placeholder="Enter your name" required>
+            </label>
+            
+            <label>
+                Your email:
+                <input type="email" name="email" placeholder="Enter your email" required>
+            </label>
+            
+            <label>
+                Your message:
+                <textarea name="message" placeholder="Enter your message" required></textarea>
+            </label>
+            
+            <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
+    </div>
 </section>
 
 <!-- Footer -->
 <footer>
-    <p>© 2026 GP Infotech. All Rights Reserved.</p>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>GP INFOTECH</h3>
+            <p>Your trusted technology partner since 2020. We provide quality IT solutions and services.</p>
+        </div>
+       
+        <div class="footer-section">
+            <h3>Working Hours</h3>
+            <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
+            <p>Sunday: Closed</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 GP Infotech. All Rights Reserved. | Designed with <i class="fas fa-heart"></i> in India</p>
+    </div>
 </footer>
 
 <script src="script.js"></script>
